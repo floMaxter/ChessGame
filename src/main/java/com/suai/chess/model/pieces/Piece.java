@@ -1,6 +1,6 @@
 package com.suai.chess.model.pieces;
 
-public class Piece {
+public abstract class Piece {
     protected final PieceType pieceType;
     protected final int piecePosition;
     protected final Alliance pieceAlliance;

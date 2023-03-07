@@ -1,6 +1,12 @@
 package com.suai.chess.model.board;
 
-public class Tile {
+import com.suai.chess.model.pieces.Piece;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+public abstract class Tile {
     protected final int tileCoordinate;
     private static final Map<Integer, EmptyTile> EMPTY_TILES_CACHE = createAllPossibleEmptyTiles();
 
@@ -9,7 +15,7 @@ public class Tile {
     }
 
     private static Map<Integer, EmptyTile> createAllPossibleEmptyTiles() {
-        Map<Integer, EmptyTile> emptyTileMap = new HashMap<>();
+        Map<Integer, EmptyTile> emptyTileMap = new HashMap<Integer, EmptyTile>();
         for (int i = 0; i < BoardPlugins.NUM_TILES; i++) {
             emptyTileMap.put(i, new EmptyTile(i));
         }
