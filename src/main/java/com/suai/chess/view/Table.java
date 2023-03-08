@@ -1,11 +1,13 @@
 package com.suai.chess.view;
 
 
+import com.suai.chess.io.FilePlugins;
 import com.suai.chess.model.board.*;
 import com.suai.chess.model.board.movement.Move;
 import com.suai.chess.model.board.movement.MoveTransition;
 import com.suai.chess.model.pieces.Piece;
 import com.suai.chess.model.player.Player;
+import com.suai.chess.model.player.ai.MinMax;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -613,7 +615,7 @@ public class Table extends Observable {
 
         @Override
         protected Move doInBackground() {
-            final MiniMax miniMax = new MiniMax(4);
+            final MinMax miniMax = new MinMax(4);
             return miniMax.perform(Table.get().getGameBoard());
         }
 
