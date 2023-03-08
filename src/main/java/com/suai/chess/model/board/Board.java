@@ -6,10 +6,7 @@ import com.suai.chess.model.player.BlackPlayer;
 import com.suai.chess.model.player.Player;
 import com.suai.chess.model.player.WhitePlayer;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Board {
     private final List<Tile> gameBoard;

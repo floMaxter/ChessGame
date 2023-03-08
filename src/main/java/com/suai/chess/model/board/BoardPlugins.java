@@ -1,5 +1,9 @@
 package com.suai.chess.model.board;
 
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
 public class BoardPlugins {
     public static final boolean[] FIRST_COLUMN = initColumn(0);
     public static final boolean[] SECOND_COLUMN = initColumn(1);

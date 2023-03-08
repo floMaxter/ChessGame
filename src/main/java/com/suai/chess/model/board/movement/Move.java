@@ -6,7 +6,7 @@ import com.suai.chess.model.pieces.Pawn;
 import com.suai.chess.model.pieces.Piece;
 import com.suai.chess.model.pieces.Rook;
 
-import static com.chess.model.board.Board.*;
+import static com.suai.chess.model.board.Board.*;
 
 public abstract class Move {
     protected final Board board;
