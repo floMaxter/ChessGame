@@ -1,6 +1,15 @@
 package com.suai.chess.model.pieces;
 
+import com.suai.chess.model.board.Board;
+import com.suai.chess.model.board.BoardPlugins;
 import com.suai.chess.model.board.Tile;
+import com.suai.chess.model.board.movement.Move;
+import com.suai.chess.model.board.movement.Move.AttackedMove;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 public class Rook extends Piece {
     private static final int[] CANDIDATE_MOVE_VECTOR_COORDINATE = {-8, -1, 1, 8};

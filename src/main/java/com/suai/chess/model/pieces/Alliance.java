@@ -1,5 +1,10 @@
 package com.suai.chess.model.pieces;
 
+import com.suai.chess.model.board.BoardPlugins;
+import com.suai.chess.model.player.BlackPlayer;
+import com.suai.chess.model.player.Player;
+import com.suai.chess.model.player.WhitePlayer;
+
 public enum Alliance {
     WHITE {
         @Override

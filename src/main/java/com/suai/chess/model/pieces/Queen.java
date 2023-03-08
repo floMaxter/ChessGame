@@ -1,5 +1,17 @@
 package com.suai.chess.model.pieces;
 
+import com.suai.chess.model.board.Board;
+import com.suai.chess.model.board.BoardPlugins;
+import com.suai.chess.model.board.Tile;
+import com.suai.chess.model.board.movement.Move;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+import static com.suai.chess.model.board.movement.Move.*;
+
 public class Queen extends Piece {
     private static final int[] CANDIDATE_MOVE_VECTOR_COORDINATE = {-9, -8, -7, -1, 1, 7, 8, 9};
 
@@ -25,7 +37,7 @@ public class Queen extends Piece {
                 if (BoardPlugins.isValidTileCoordinate(candidateDestinationCoordinate)) {
                     Tile candidateDestinationTile = board.getTile(candidateDestinationCoordinate);
                     if (!candidateDestinationTile.isTileOccupied()) {
-                        legalMoves.add(new Move.EmptyMove(board, this, candidateDestinationCoordinate));
+                        legalMoves.add(new EmptyMove(board, this, candidateDestinationCoordinate));
                     } else {
                         Piece pieceAtDestination = candidateDestinationTile.getPiece();
                         Alliance selectedPieceAlliance = pieceAtDestination.getPieceAlliance();

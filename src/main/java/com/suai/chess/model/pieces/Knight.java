@@ -1,5 +1,18 @@
 package com.suai.chess.model.pieces;
 
+import com.suai.chess.model.board.Board;
+import com.suai.chess.model.board.BoardPlugins;
+import com.suai.chess.model.board.Tile;
+import com.suai.chess.model.board.movement.Move;
+import com.suai.chess.model.board.movement.Move.EmptyMove;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+import static com.suai.chess.model.board.movement.Move.*;
+
 public class Knight extends Piece {
     private final static int[] CANDIDATE_MOVE_COORDINATES = {-17, -15, -10, -6, 6, 10, 15, 17};
 

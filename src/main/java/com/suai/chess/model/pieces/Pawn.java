@@ -1,5 +1,17 @@
 package com.suai.chess.model.pieces;
 
+import com.suai.chess.model.board.BoardPlugins;
+import com.suai.chess.model.board.Tile;
+import com.suai.chess.model.board.movement.Move;
+import com.suai.chess.model.board.Board;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collection;
+
+import static com.suai.chess.model.board.movement.Move.*;
+
 public class Pawn extends Piece {
     private final static int[] CANDIDATE_MOVE_COORDINATES = {7, 8, 9, 16};
 

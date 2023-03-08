@@ -1,5 +1,10 @@
 package com.suai.chess.model.pieces;
 
+import com.suai.chess.model.board.Board;
+import com.suai.chess.model.board.movement.Move;
+
+import java.util.Collection;
+
 public abstract class Piece {
     protected final PieceType pieceType;
     protected final int piecePosition;
