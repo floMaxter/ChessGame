@@ -1,5 +1,7 @@
 package com.suai.chess.model.pieces;
 
+import com.suai.chess.model.board.Tile;
+
 public class Rook extends Piece {
     private static final int[] CANDIDATE_MOVE_VECTOR_COORDINATE = {-8, -1, 1, 8};
 
@@ -13,7 +15,7 @@ public class Rook extends Piece {
 
     @Override
     public Collection<Move> calculateLegalMoves(Board board) {
-        List<Move> legalMoves = new ArrayList<>();
+        List<Move> legalMoves = new ArrayList<Move>();
         for (int currentCoordinateOffset : CANDIDATE_MOVE_VECTOR_COORDINATE) {
             int candidateDestinationCoordinate = this.piecePosition;
             while (BoardPlugins.isValidTileCoordinate(candidateDestinationCoordinate)) {

@@ -1,13 +1,15 @@
 package com.suai.chess.model.player;
 
 import com.suai.chess.model.board.Board;
+import com.suai.chess.model.board.Tile;
 import com.suai.chess.model.board.movement.Move;
+import com.suai.chess.model.board.movement.Move.QueenSideCastleMove;
 import com.suai.chess.model.pieces.Alliance;
 import com.suai.chess.model.pieces.*;
-import com.suai.chess.model.player.BlackPlayer;
-import com.suai.chess.model.player.Player;
-import com.suai.chess.model.player.WhitePlayer;
+import com.suai.chess.model.pieces.Piece;
+import com.suai.chess.model.pieces.Piece.PieceType;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -50,7 +52,7 @@ public class BlackPlayer extends Player {
                     if (Player.calculateAttacksOnTile(5, opponentsLegals).isEmpty() &&
                             Player.calculateAttacksOnTile(6, opponentsLegals).isEmpty() &&
                             rookTile.getPiece().isParticularPiece(PieceType.ROOK)) {
-                        kingCastles.add(new KingSideCastleMove(this.board, this.playerKing, 6,
+                        kingCastles.add(new Move.KingSideCastleMove(this.board, this.playerKing, 6,
                                 (Rook) rookTile.getPiece(), rookTile.getTileCoordinate(), 5));
                     }
                 }

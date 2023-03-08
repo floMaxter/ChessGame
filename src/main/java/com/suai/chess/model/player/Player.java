@@ -7,7 +7,9 @@ import com.suai.chess.model.board.movement.Move.MoveStatus;
 import com.suai.chess.model.board.movement.MoveTransition;
 import com.suai.chess.model.pieces.King;
 import com.suai.chess.model.pieces.Piece;
+import com.suai.chess.model.pieces.Piece.PieceType;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;

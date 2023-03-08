@@ -1,5 +1,7 @@
 package com.suai.chess.model.pieces;
 
+import com.suai.chess.model.board.Board;
+import com.suai.chess.model.board.BoardPlugins;
 import com.suai.chess.model.board.Tile;
 
 import java.util.Collections;

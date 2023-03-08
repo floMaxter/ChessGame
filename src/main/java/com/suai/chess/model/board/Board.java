@@ -1,6 +1,7 @@
 package com.suai.chess.model.board;
 
 import com.suai.chess.model.pieces.*;
+import com.suai.chess.model.player.Player;
 import com.suai.chess.model.player.WhitePlayer;
 
 import java.util.Collection;
