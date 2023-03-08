@@ -1,6 +1,6 @@
 # ChessGame
 Java Chess game with using graphics library Swing.
-#### Prerequisites: [Java](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html), [Maven](https://maven.apache.org/), [Swing](https://docs.oracle.com/javase/8/docs/api/javax/swing/package-summary.html), [JUnit 4](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api).
+#### Prerequisites: [Java 8](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html), [Maven](https://maven.apache.org/), [Swing](https://docs.oracle.com/javase/8/docs/api/javax/swing/package-summary.html), [JUnit 4](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api).
 
 ## Game description
 
